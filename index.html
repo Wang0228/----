@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: 'cwTeXYen';
+            font-style: normal;
+            font-weight: 500;
+            src: url(//fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.eot);
+            src: url(//fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.eot?#iefix) format('embedded-opentype'),
+                url(//fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.woff2) format('woff2'),
+                url(//fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.woff) format('woff'),
+                url(//fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.ttf) format('truetype');
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: cwTeXYen;
+            
+        }
+        img:not(.animation img){
+            width: 100%;
+        }
+        body{
+            background-color: #DEE2E6;
+        }
+        .border {
+            width: 60%;
+            height: 100%;
+            border-left: 4px solid black;
+            border-right: 4px solid black;
+            margin: 0 auto;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+
+        .wrap {
+            width: 60%;
+            margin: 0 auto;
+        }
+
+        header {
+            margin-top: 100px;
+            position: relative;
+            display: flex;
+        }
+
+        .block-1 {
+            width: 70.8%;
+            height: 120px;
+            background-color: black;
+            border-top-right-radius: 100px;
+            border-bottom-right-radius: 100px;
+        }
+        .block-1 p{
+            color: white;
+            font-size: 29px;
+            text-align: right;
+            margin-right: 70px;
+            margin-top: 20px
+        }
+        .block-2 {
+            width: 36%;
+            height: 80px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: black;
+        }
+
+        .block-white {
+            width: 30%;
+            height: 70px;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            background-color: #DEE2E6;
+            border-top-left-radius: 50px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .block-white img{
+            width: 50px;
+            height: 50px;
+        }
+        .pic_me{
+            width: 180px;
+            height: 180px;
+            position: absolute;
+            top: -50px;
+            left: 5%;
+            
+        }
+        .pic_me img {
+            width: 100%;
+            height: 110%;
+            border-radius: 50%;
+            border: 10px white solid;
+            box-shadow: 2px 2px 5px 0;
+        }
+        .name{
+            margin-top: 130px;
+            font-size: 60px;
+            font-weight: 500;
+            text-align: center;
+        }
+        .OAI{
+            background-color: black;
+            color: white;
+            margin: auto;
+            width: 200px;
+            height: 30px;
+            text-align: center;
+            padding-top: 5px;
+            margin-top: 10px;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .self{
+            margin-top: 110px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .about{
+            width: fit-content;
+            display: flex;
+        }
+        .about + .about::before{
+            content: "";
+            margin-right: 40px;
+            border-left: 2px solid black;
+        }
+        .icon{
+            width: 80px;
+            height: 80px;
+        }
+        .text{
+            text-align: center;
+            font-size: 20px;
+            padding: 20px 0;
+        }
+        
+        .animation{
+            position: fixed;
+            bottom: 0;
+            animation: walk 3s;
+        }
+
+        @keyframes walk{
+            0%{left: 0; }
+            25%{
+                transform: rotate(25deg);
+                left:25%
+            }
+            50%{
+                transform: rotate(0deg);
+                left: 50%;
+            }
+            75%{
+                transform: rotate(-25deg);
+                left: 75%;
+            }
+            100%{
+                transform: rotate(0deg);
+                left: 110%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="border"></div>
+    <div class="wrap">
+        <header>
+            <div class="block-1">
+                <p>第20屆</p>
+                <p>台灣微軟未來生涯體驗計劃</p>
+            </div>
+            <div class="block-2"></div>
+            <div class="block-white">
+                <a href="" id="refresh"><img src="https://cdn0.iconfinder.com/data/icons/glyphpack/41/refresh-512.png" alt=""></a>
+                <a href="" id="next"><img src="https://drive.google.com/uc?export=view&id=1ioaUB_xkGt3Y49CZYbMtSnY1DbAlkgno" alt=""></a>
+            </div>
+            <div class="pic_me">
+                <img src="https://drive.google.com/uc?export=view&id=1u5YreYWFPqfesxx06-BkqFIc_fq8FDqc" alt="個人照">
+            </div>
+        </header>
+    </div>
+    <div class="name">
+        <p>王子豪</p>
+    </div>
+    <div class="OAI">
+        <p>Technical Assistant Intern</p>
+    </div>
+    <div class="wrap">
+        <div class="self">
+            <div class="about">
+                <div class="icon"><img src="https://cdn-icons-png.flaticon.com/512/2189/2189181.png" alt=""></div>
+                <div class="text"><p>中華大學<br>資訊管理學系</p></div>
+            </div>
+            <div class="about">
+                <div class="icon"><img src="https://static.vecteezy.com/system/resources/previews/010/829/986/original/phone-icon-in-trendy-flat-style-free-png.png" alt=""></div>
+                <div class="text"><p>0903625278</p></div>
+            </div>
+            <div class="about">
+                <div class="icon"><img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt=""></div>
+                <div class="text"><p>a36802548@gmail.com</p></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="animation">
+        <img src="https://play-lh.googleusercontent.com/WBtAyvthIoidqggdyWcaZX8YRPAgjijLiHkyRQ5kvwceSecUyjA2Vo5DnOc7wI2MOA" alt="">
+    </div>
+
+
+    <script>
+        let animation=document.querySelector(".animation");
+        let refresh=document.getElementById("refresh");
+        let next=document.getElementById("next");
+        window.onload=function(){
+            animation.addEventListener("animationend",()=>{
+                animation.style.display="none";
+            })
+            refresh.addEventListener("click",function(){
+                location.reload();
+            })
+                next.addEventListener("click",()=>{
+                    location="02.html";
+                })
+            
+        }
+
+    </script>
+</body>
+
+</html>
