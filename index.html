@@ -56,11 +56,17 @@
         .block-1 {
             width: 70.8%;
             height: 120px;
+            display: flex;
+            flex-direction: column;
+            align-items: end;
             background-color: black;
             border-top-right-radius: 100px;
             border-bottom-right-radius: 100px;
         }
-        .block-1 p{
+        .block-text{
+            width: 90%;
+        }
+        .block-text p{
             color: white;
             font-size: 29px;
             text-align: right;
@@ -182,8 +188,10 @@
     <div class="wrap">
         <header>
             <div class="block-1">
-                <p>第20屆</p>
+                <div class="block-text">
+                    <p>第20屆</p>
                 <p>台灣微軟未來生涯體驗計劃</p>
+                </div>
             </div>
             <div class="block-2"></div>
             <div class="block-white">
