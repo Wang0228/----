@@ -13,6 +13,10 @@
         body {
             background-color: rgb(202,236,241,0.952);
         }
+        a{
+            text-decoration: none;
+            color:black;
+        }
         @font-face {
         font-family: 'cwTeXYen';
         font-style: normal;
@@ -47,7 +51,7 @@
             height: 550px;
             overflow: hidden;
         }
-        .view a{
+        .view a:not(a:first-child){
             display: none;
         }
         .portfolio{
@@ -70,6 +74,9 @@
             left: 0;
             background-color: rgb(255, 234, 165);
         }
+        .word{
+            text-align: left;
+        }
         .left{
             width: 80px;
             height: 80px;
@@ -77,6 +84,7 @@
             left: 0;
             top: 50%;
         }
+        
     </style>
 </head>
 <body>
@@ -84,7 +92,7 @@
         <div class="title">
             <h1>portfolio</h1>
         </div>
-        <div class="view">  
+        <div class="view">
             <a href=""><img src="https://drive.google.com/uc?export=view&id=1T5jnAsao8n6WhntQ3067NII4hcPc8e3_" alt=""></a>
             <a href=""><img src="https://drive.google.com/uc?export=view&id=1ZBWw41uywVPHcx3_teVTiaXyo7H4MqYS" alt=""></a>
             <a href=""><img src="https://drive.google.com/uc?export=view&id=1TnZZGXdV-UWyP0jBAanfXzHOv2-zQMFF" alt=""></a>
@@ -97,7 +105,9 @@
                 <div class="text">
                     <div class="h3">Shopline</div>
                     <div class="word">
-                        <p>Shopline的html與css練習</p>
+                        <p>學習html後第一個切出來的網站，增強對選擇器的熟練度，也
+                            使用到了當時剛學的JS來控制往下滑header會縮短的效果，以及使用animation及keyframes配合的動畫應用
+                        </p>
                     </div>
                 </div>
             </div>
@@ -105,28 +115,36 @@
                 <p>商品查詢網站</p>
                 <div class="text">
                     <div class="h3">商品查詢網站</div>
-                    <div class="word">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto accusamus numquam voluptatibus adipisci fugiat eius recusandae, ipsa minima placeat eligendi fuga, consectetur pariatur magnam dolorem officiis odit commodi aspernatur sit!</div>
+                    <div class="word">
+                        <p>
+                            增強對JS的熟練度，導入資料模組，使用大量的篩選及事件處理器，filter、map來做商品查詢，addEventListener來監聽事件執行綁定的function，與手機跟電腦版的RWD~
+                        </p>
+                    </div>
                 </div>
             </div>
             <div class="item">
                 <p>LINQ</p>
                 <div class="text">
                     <div class="h3">LINQ</div>
-                    <div class="word">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto accusamus numquam voluptatibus adipisci fugiat eius recusandae, ipsa minima placeat eligendi fuga, consectetur pariatur magnam dolorem officiis odit commodi aspernatur sit!</div>
+                    <div class="word">C# LINQ，讀取csv檔，使用LINQ進行產品篩選及for、foreach等迴圈與lambda做出複合運算查詢</div>
                 </div>
             </div>
             <div class="item">
                 <p>Entity Framework</p>
                 <div class="text">
                     <div class="h3">Entity Framework</div>
-                    <div class="word"></div>
+                    <div class="word">
+                        <p>
+                            Entity Framework練習，用Windows Form設計視窗及localDB資料庫，做到對商品進行新增、修改、查詢、刪除、瀏覽等功能
+                        </p>
+                    </div>
                 </div>
             </div>
             <div class="item">
                 <p>C 井字遊戲</p>
                 <div class="text">
                     <div class="h3">C 井字遊戲</div>
-                    <div class="word"></div>
+                    <div class="word">迴圈應用與邏輯判斷，電腦亂數自動下棋，判斷勝利的井字遊戲</div>
                 </div>
             </div>
         </div>
