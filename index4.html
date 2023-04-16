@@ -46,23 +46,27 @@
             padding: 10px;
             border-bottom: 2px solid black
         }
-        .view{
+        .wrap2{
+            display: flex;
+        }
+        .portfolio{
+           width: 30%;
+        }
+        .item{
             width: 100%;
+            height:20%;
+            border: 2px solid black;
+            text-align: center;
+            position: relative;
+            background-color: rgb(255, 242, 104);
+        }
+        .view{
+            width: 70%;
             height: 550px;
             overflow: hidden;
         }
         .view a:not(a:first-child){
             display: none;
-        }
-        .portfolio{
-            display: flex;
-        }
-        .item{
-            width: 20%;
-            border: 2px solid black;
-            text-align: center;
-            position: relative;
-            background-color: rgb(255, 242, 104);
         }
         .text{
             display: none;
@@ -92,28 +96,30 @@
         <div class="title">
             <h1>portfolio</h1>
         </div>
-        <div class="view">
-            <a href="https://github.com/Wang0228/ShopLine"><img src="https://drive.google.com/uc?export=view&id=1T5jnAsao8n6WhntQ3067NII4hcPc8e3_" alt=""></a>
-            <a href="https://github.com/Wang0228/product"><img src="https://drive.google.com/uc?export=view&id=1ZBWw41uywVPHcx3_teVTiaXyo7H4MqYS" alt=""></a>
-            <a href="https://github.com/Wang0228/LINQ"><img src="https://drive.google.com/uc?export=view&id=1TnZZGXdV-UWyP0jBAanfXzHOv2-zQMFF" alt=""></a>
-            <a href="https://github.com/Wang0228/ETForm"><img src="https://drive.google.com/uc?export=view&id=1XznvYnvPPPq8uFsey21DXD309SXR-aOn" alt=""></a>
-            <a href="https://github.com/Wang0228/C-Tic-Tac-Toe/tree/main"><img src="https://drive.google.com/uc?export=view&id=1fa53PvkoPEUk2Ibom3k89moyn4-r9iJT" alt=""></a>
-        </div>
-        <div class="portfolio">
-            <div class="item">
-                <p>Shopline</p>
+        <div class="wrap2">
+            <div class="portfolio">
+                <div class="item">
+                    <p>Shopline</p>
+                </div>
+                <div class="item">
+                    <p>商品查詢網站</p>
+                </div>
+                <div class="item">
+                    <p>LINQ</p>
+                </div>
+                <div class="item">
+                    <p>Entity Framework</p>
+                </div>
+                <div class="item">
+                    <p>C 井字遊戲</p>
+                </div>
             </div>
-            <div class="item">
-                <p>商品查詢網站</p>
-            </div>
-            <div class="item">
-                <p>LINQ</p>
-            </div>
-            <div class="item">
-                <p>Entity Framework</p>
-            </div>
-            <div class="item">
-                <p>C 井字遊戲</p>
+            <div class="view">
+                <a href="https://github.com/Wang0228/ShopLine"><img src="https://drive.google.com/uc?export=view&id=1iBpLp5KyxXllwHytqh7xpsMtR5_deMHs" alt=""></a>
+                <a href="https://github.com/Wang0228/product"><img src="https://drive.google.com/uc?export=view&id=1ZBWw41uywVPHcx3_teVTiaXyo7H4MqYS" alt=""></a>
+                <a href="https://github.com/Wang0228/LINQ"><img src="https://drive.google.com/uc?export=view&id=1TnZZGXdV-UWyP0jBAanfXzHOv2-zQMFF" alt=""></a>
+                <a href="https://github.com/Wang0228/ETForm"><img src="https://drive.google.com/uc?export=view&id=1XznvYnvPPPq8uFsey21DXD309SXR-aOn" alt=""></a>
+                <a href="https://github.com/Wang0228/C-Tic-Tac-Toe/tree/main"><img src="https://drive.google.com/uc?export=view&id=1fa53PvkoPEUk2Ibom3k89moyn4-r9iJT" alt=""></a>
             </div>
         </div>
     </div>
